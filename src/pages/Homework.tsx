@@ -13,30 +13,29 @@ const homeworkList: Homework[] = [
   {
     title: "Portfolio Website",
     description: "Create a personal portfolio website to showcase your projects.",
-    formUrl: "https://forms.gle/abcdefg1234567",
+    formUrl: "https://docs.google.com/forms/d/e/1FAIpQLSeWPASIBhvQ56hGe7y8icbpb9jXUu6oqY1iYr2RiK1rVbdLWA/closedform",
   },
   {
     title: "Flashcard App",
     description: "Build a flashcard app to practice JavaScript.",
-    formUrl: "https://forms.gle/xyz987654321",
+    formUrl: "https://docs.google.com/forms/d/e/1FAIpQLSdeaQtCgkg7PvP_TIEIB5a7X5S4MFD56JLNeS4PWycqBGi31w/viewform",
   },
   {
     title: "Flexbox Frog and CSS Work",
     description: "Complete the Flexbox Frog game and other CSS-related exercises.",
-    formUrl: "https://forms.gle/12345678abcdefgh",
+    formUrl: "https://docs.google.com/forms/d/e/1FAIpQLSfQFK17245tRC6FuoOYBBozy_n13Cna7hc9ygjz0IPMjpUQGA/viewform",
   },
   {
     title: "Memory Matching Game and React Docs",
     description: "Develop a memory matching game and read React documentation.",
-    formUrl: "https://forms.gle/ijklmnopqrstuv",
+    formUrl: "https://docs.google.com/forms/d/e/1FAIpQLSfXbxbAbiH_0DyQMpA7VvUYZm30wV5rlo9qZ5dIjdYvo-FkYg/viewform",
   },
   {
     title: "Twitter App Clone",
     description: "Create a clone of Twitter and read more React documentation.",
-    formUrl: "https://forms.gle/wxyz0987654321",
+    formUrl: "https://docs.google.com/forms/d/e/1FAIpQLSfsUt76wk2W5hXuOzyl7BZ0fAXaYN7hFcHLmFmQSggDMPe17g/viewform",
   },
 ];
-
 const Homework: React.FC = () => {
   const [completed, setCompleted] = useState<boolean[]>(new Array(homeworkList.length).fill(false));
 
