@@ -1,11 +1,11 @@
-/* General Navbar Styles */
+
 .navbar {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1000;
-    background-color: #ffffff; /* Ensures consistent navbar color */
+    background-color: #ffffff; 
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
   
@@ -23,7 +23,7 @@
     margin-right: 10px;
   }
   
-  /* Navbar Links */
+
   .navbar-nav .nav-item {
     margin: 0 10px;
   }
@@ -37,36 +37,36 @@
     transition: background-color 0.3s, color 0.3s;
   }
   
-  /* Hover Effect for Links */
+
   .navbar-nav .nav-item .nav-link:hover {
-    color: #ffffff !important; /* Text changes to white */
-    background-color: #000000; /* Black background */
+    color: #ffffff !important;
+    background-color: #000000; 
     transition: background-color 0.3s, color 0.3s;
   }
   
   /* Active Link Styling */
   .navbar-nav .nav-item .nav-link.active {
-    color: #f0a500 !important; /* Highlight color for active links */
-    border-bottom: 2px solid #f0a500; /* Underline effect */
-    background-color: transparent; /* Keep background consistent */
+    color: #f0a500 !important; 
+    border-bottom: 2px solid #f0a500; 
+    background-color: transparent; 
   }
   
-  /* Mobile View Styling */
+ 
   .navbar-toggler {
     border: none;
     outline: none;
   }
   
   .navbar-collapse {
-    background-color: #ffffff; /* Background for mobile dropdown */
+    background-color: #ffffff; 
   }
   
   .navbar-nav .nav-item .nav-link {
-    margin: 5px 0; /* Spacing for dropdown links */
+    margin: 5px 0; 
   }
   
   .navbar-toggler-icon {
-    filter: invert(0.7); /* Makes the icon more visible */
+    filter: invert(0.7);
   }
   
   /* Responsive Adjustments */
@@ -78,7 +78,7 @@
     }
   
     .navbar-nav .nav-item .nav-link {
-      width: 100%; /* Full-width links in dropdown */
+      width: 100%; 
       text-align: left;
     }
   }

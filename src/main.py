@@ -1,5 +1,6 @@
 # main.py
 import random
+import sqlite3
 from fastapi import FastAPI, HTTPException, Depends, Request, logger
 from sqlalchemy import create_engine, Column, Integer, String
 from sqlalchemy.ext.declarative import declarative_base
@@ -70,13 +71,28 @@ async def login_user(request: LoginRequest):
 
 
 daily_code = str(random.randint(100000, 999999))
-print(f"Daily Attendance Code (for testing purposes): {daily_code}")
+print(f"Daily Attendance Code : {daily_code}")
+
+conn = sqlite3.connect('attendance.db')
+cursor = conn.cursor()
+cursor.execute('''
+    CREATE TABLE IF NOT EXISTS attendance (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        username TEXT,
+        timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+        code TEXT
+    )
+''')
+conn.commit()
 
 @app.post("/verify-attendance/")
 async def verify_attendance(request: Request):
     data = await request.json()
     code = data.get("code")
+    
     if code != daily_code:
+        cursor.execute('INSERT INTO attendance (code) VALUES (?)', (code,))
+        conn.commit()
         return {"message": "You are marked as present!"}
     else:
         raise HTTPException(status_code=400, detail="Incorrect code. Please try again.")

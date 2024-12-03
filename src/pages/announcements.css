@@ -1,0 +1,49 @@
+.announcements-container {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .announcements-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .announcement {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .announcement-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .announcement-profile-pic {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 1rem;
+  }
+  
+  .announcement-author {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .announcement-timestamp {
+    font-size: 0.9rem;
+    color: #888;
+  }
+  
+  .announcement-message {
+    font-size: 1rem;
+    line-height: 1.6;
+    white-space: pre-wrap;
+  }
+  

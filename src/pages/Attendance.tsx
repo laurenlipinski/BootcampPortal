@@ -70,7 +70,7 @@ const Attendance: React.FC = () => {
 
     return (
         <div> <NavBar
-        brandName="Attendance System"
+        brandName=""
         imageSrcPath={logo}
         navItems={[
           { name: "Home", path: "/home" },
@@ -78,12 +78,13 @@ const Attendance: React.FC = () => {
           { name: "Attendance", path: "/attendance" },
           { name: "Resources", path: "/resources" },
           { name: "Homework", path: "/homework" },
-          { name: "Grading", path: "/grading" },
+          
         ]}
       />
         <div className="attendance-container">
             
             <h1 className="attendance-title"></h1>
+
             {renderCalendar()}
             <div className="attendance-form">
                 <form onSubmit={handleSubmit}>

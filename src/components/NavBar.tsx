@@ -10,6 +10,19 @@ interface NavBarProps {
 const NavBar: React.FC<NavBarProps> = ({ brandName, imageSrcPath, navItems }) => {
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
 
+  const [darkMode, setDarkMode] = useState<boolean>(false);
+
+  
+  const toggleDarkMode = () => {
+    const body = document.body;
+    if (darkMode) {
+      body.classList.remove("dark-mode");
+    } else {
+      body.classList.add("dark-mode");
+    }
+    setDarkMode(!darkMode);
+  };
+
   return (
     <nav className="navbar navbar-expand-md navbar-light bg-white shadow">
       <div className="container-fluid">
@@ -25,7 +38,7 @@ const NavBar: React.FC<NavBarProps> = ({ brandName, imageSrcPath, navItems }) =>
           <span className="fw-bolder fs-4">{brandName}</span>
         </Link>
 
-        {/* Toggle Button for Mobile View */}
+        
         <button
           className="navbar-toggler"
           type="button"
@@ -53,6 +66,14 @@ const NavBar: React.FC<NavBarProps> = ({ brandName, imageSrcPath, navItems }) =>
               </li>
             ))}
           </ul>
+          {/* Dark Mode Toggle Button */}
+          <button
+            className="btn btn-dark ms-2"
+            onClick={toggleDarkMode}
+            aria-label="Toggle Dark Mode"
+          >
+            {darkMode ? "Light Mode" : "Dark Mode"}
+          </button>
 
           {/* Optional Search */}
           <form className="d-flex">

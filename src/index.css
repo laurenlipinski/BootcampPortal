@@ -66,3 +66,40 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+body {
+  background-color: #ffffff; 
+  color: #000;
+}
+
+body {
+  background-color: #ffffff; 
+  color: #000; 
+}
+
+.dark-mode {
+  background-color: #121212; 
+  color: #ffffff; 
+}
+
+
+.navbar-dark {
+  background-color: #1e1e1e;
+}
+
+.navbar-dark .nav-link {
+  color: #ffffff;
+}
+
+.navbar-light {
+  background-color: #ffffff;
+}
+
+.navbar-light .nav-link {
+  color: #000;
+}
+
+
+.dark-mode .container, .dark-mode .homework-container, .dark-mode .status-wheel {
+  background-color: #1e1e1e;
+  color: #ffffff;
+}

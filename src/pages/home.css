@@ -1,5 +1,4 @@
-/* Container for the main content */
-/* General styling for the body */
+
 body {
     margin: 0;
     padding: 0;
@@ -10,7 +9,7 @@ body {
     justify-content: center;
 }
 
-/* Styling for the navbar */
+
 nav {
     width: 100%;
     background-color: #333;
@@ -21,7 +20,7 @@ nav {
     box-sizing: border-box;
 }
 
-/* Navbar link styling */
+
 nav a {
     color: white;
     text-decoration: none;
@@ -34,7 +33,7 @@ nav a:hover {
     border-radius: 5px;
 }
 
-/* Main container for the content */
+
 .home-container {
     display: flex;
     flex-direction: column;
@@ -44,21 +43,21 @@ nav a:hover {
     box-sizing: border-box;
 }
 
-/* Title styling */
+
 .home-title {
     text-align: center;
     margin-bottom: 20px;
     font-size: 2.5rem;
 }
 
-/* Section title styling */
+
 .section-title {
     text-align: center;
     margin-bottom: 15px;
     font-size: 1.8rem;
 }
 
-/* Instructor section styling */
+
 .instructor-section {
     display: flex;
     flex-direction: column;
@@ -67,19 +66,19 @@ nav a:hover {
     text-align: center;
 }
 
-/* Image styling */
+
 .instructor-image {
     width: 300px;
     border-radius: 10px;
     margin-bottom: 15px;
 }
 
-/* Styling for instructor info */
+
 .instructor-info {
     margin: 5px 0;
 }
 
-/* Class details section */
+
 .class-details-section {
     display: flex;
     flex-direction: column;
@@ -88,12 +87,12 @@ nav a:hover {
     margin-bottom: 40px;
 }
 
-/* Styling for class details */
+
 .class-details {
     margin: 10px 0;
 }
 
-/* Contact section styling */
+
 .contact-section {
     display: flex;
     flex-direction: column;
@@ -101,7 +100,7 @@ nav a:hover {
     text-align: center;
 }
 
-/* Contact link styling */
+
 .contact-link {
     margin-top: 10px;
     color: #007bff;
@@ -110,5 +109,26 @@ nav a:hover {
 }
 
 .contact-link:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    text-align: center;
+    border-top: 1px solid #e0e0e0;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.footer a:hover {
     text-decoration: underline;
 }

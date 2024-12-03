@@ -17,7 +17,7 @@ const Home: React.FC = () => {
           { name: "Attendance", path: "/attendance" },
           { name: "Resources", path: "/resources" },
           { name: "Homework", path: "/homework" },
-          { name: "Grading", path: "/grading" },
+          
         ]}
         />
         <div className="home-container">
@@ -26,12 +26,12 @@ const Home: React.FC = () => {
             <div className="instructor-section">
                 <h2 className="section-title">Course Details</h2>
                 <img
-                    src="kimber.jfif" // Replace with the actual photo URL
+                    src="kimber.jfif" 
                     alt="Instructor"
                     className="instructor-image"
                 />
                 <p className="instructor-info"><strong>Lead Instructor:</strong> Kimber Gonzalez Lopez</p>
-                <p className="instructor-info">.</p>
+                <p className="instructor-info"><strong>Assisted by:</strong> Evelyn Jiang</p>
             </div>
 
             <div className="class-details-section">
@@ -39,7 +39,7 @@ const Home: React.FC = () => {
                 <p className="class-details"><strong>Materials Covered:</strong> Introduction to Web Development, HTML, CSS, JavaScript, React, TypeScript, FastAPI, Sqlite</p>
                 <p className="class-details"> This Bootcamp Course is a comprehensive overview of important tools and stretegies for effective full stack web development</p>
                 <p className="class-details"><strong>Schedule:</strong> Tuesday: 7:00 - 8:00 PM </p>
-                <p className="class-details"><strong>Location:</strong> CSI 1107 </p>
+                <p className="class-details"><strong>Location:</strong> CSI 1121 </p>
             </div>
 
             <div className="contact-section">
@@ -51,6 +51,12 @@ const Home: React.FC = () => {
                 <a href="https://us05web.zoom.us/j/3973323282?pwd=bU1uZTVUMHpvMFIzL1EvMFdqTTNadz09" target="_blank" rel="noopener noreferrer" className="contact-link">Evelyn's Zoom Link</a>
             </div>
             </div>
+            <footer className="footer">
+                <p>2024 AppDev Companion</p>
+                <a href="https://appdevclub.com/" target="_blank" rel="noopener noreferrer">
+                    Main AppDev Site
+                </a>
+            </footer>
         </div>
     );
 };
