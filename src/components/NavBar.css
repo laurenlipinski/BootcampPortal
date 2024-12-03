@@ -1,0 +1,11 @@
+.navbar-nav .nav-item .nav-link:hover {
+    color: #000000 !important; 
+    background-color: #f8f9fa; 
+    transition: background-color 0.3s, color 0.3s; 
+  }
+  
+  .navbar-nav .nav-item .nav-link.active {
+    color: #f0a500 !important; 
+    border-bottom: 2px solid #f0a500;
+  }
+  
