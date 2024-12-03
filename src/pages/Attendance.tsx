@@ -1,5 +1,7 @@
 // src/pages/Attendance.tsx
 import React, { useState } from "react";
+import logo from "../assets/logo.png";
+import NavBar from "../components/NavBar";
 import axios from "axios";
 import "./attendance.css";
 
@@ -37,7 +39,9 @@ const Attendance: React.FC = () => {
 
         // Render the calendar
         return (
+            
             <div className="calendar">
+                
                 <div className="calendar-header">
                     <span>Sun</span>
                     <span>Mon</span>
@@ -53,19 +57,33 @@ const Attendance: React.FC = () => {
                             key={index}
                             className={`calendar-day ${
                                 day === today.getDate() ? "highlighted" : ""
-                            } ${index % 7 === 1 ? "tuesday" : ""}`}
+                            } ${index % 7 === 2 ? "tuesday" : ""}`}
                         >
                             {day !== null ? day : ""}
                         </div>
                     ))}
                 </div>
             </div>
+            
         );
     };
 
     return (
+        <div> <NavBar
+        brandName="Attendance System"
+        imageSrcPath={logo}
+        navItems={[
+          { name: "Home", path: "/home" },
+          { name: "Announcements", path: "/announcements" },
+          { name: "Attendance", path: "/attendance" },
+          { name: "Resources", path: "/resources" },
+          { name: "Homework", path: "/homework" },
+          { name: "Grading", path: "/grading" },
+        ]}
+      />
         <div className="attendance-container">
-            <h1 className="attendance-title">Attendance</h1>
+            
+            <h1 className="attendance-title"></h1>
             {renderCalendar()}
             <div className="attendance-form">
                 <form onSubmit={handleSubmit}>
@@ -80,6 +98,7 @@ const Attendance: React.FC = () => {
                 </form>
                 <p className="attendance-message">{message}</p>
             </div>
+        </div>
         </div>
     );
 };

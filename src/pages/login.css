@@ -1,0 +1,120 @@
+/* Full-screen container */
+/* Full-screen container */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff; 
+    font-family: 'Courier New', Courier, monospace;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Styling for the terminal window */
+.terminal-window {
+    width: 500px;
+    height: 300px; /* Adjust as needed */
+    background-color: #1e1e1e; /* Dark gray, typical of command prompt */
+    border: 1px solid #333;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Terminal header (window buttons) */
+.terminal-header {
+    display: flex;
+    justify-content: flex-start;
+    background-color: #333;
+    padding: 5px;
+}
+
+.terminal-icon {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.terminal-icon.red {
+    background-color: red;
+}
+
+.terminal-icon.yellow {
+    background-color: yellow;
+}
+
+.terminal-icon.green {
+    background-color: green;
+}
+
+/* Terminal body */
+.terminal-body {
+    padding: 15px;
+    overflow-y: auto;
+    flex: 1;
+}
+
+/* Prompt styling */
+.terminal-prompt {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #00ff00; /* Typical command prompt text color */
+}
+
+/* Form styling */
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Input field styling */
+.input-field {
+    padding: 10px;
+    background-color: #333;
+    border: 1px solid #444;
+    color: #00ff00; /* Command prompt text color */
+    font-size: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 5px;
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Styling for input focus */
+.input-field:focus {
+    border-color: #00ff00; /* Highlight border color */
+    box-shadow: 0 0 5px #00ff00; /* Glow effect */
+}
+
+/* Placeholder styling */
+.input-field::placeholder {
+    color: #aaa; /* Light gray for placeholder */
+}
+
+/* Button styling */
+.login-button {
+    padding: 10px;
+    background-color: #0078d4; /* Light blue for a subtle contrast */
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    outline: none;
+}
+
+.login-button:hover {
+    background-color: #005a9e;
+}
+
+/* Styling for the login message */
+.login-message {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #aaa;
+}

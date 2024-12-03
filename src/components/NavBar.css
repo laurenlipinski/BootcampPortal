@@ -1,11 +1,86 @@
-.navbar-nav .nav-item .nav-link:hover {
-    color: #000000 !important; 
-    background-color: #f8f9fa; 
-    transition: background-color 0.3s, color 0.3s; 
+/* General Navbar Styles */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #ffffff; /* Ensures consistent navbar color */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
   
-  .navbar-nav .nav-item .nav-link.active {
-    color: #f0a500 !important; 
-    border-bottom: 2px solid #f0a500;
+  /* Navbar Brand */
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000000;
+    text-decoration: none;
   }
+  
+  .navbar-brand img {
+    margin-right: 10px;
+  }
+  
+  /* Navbar Links */
+  .navbar-nav .nav-item {
+    margin: 0 10px;
+  }
+  
+  .navbar-nav .nav-item .nav-link {
+    color: #000000;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* Hover Effect for Links */
+  .navbar-nav .nav-item .nav-link:hover {
+    color: #ffffff !important; /* Text changes to white */
+    background-color: #000000; /* Black background */
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* Active Link Styling */
+  .navbar-nav .nav-item .nav-link.active {
+    color: #f0a500 !important; /* Highlight color for active links */
+    border-bottom: 2px solid #f0a500; /* Underline effect */
+    background-color: transparent; /* Keep background consistent */
+  }
+  
+  /* Mobile View Styling */
+  .navbar-toggler {
+    border: none;
+    outline: none;
+  }
+  
+  .navbar-collapse {
+    background-color: #ffffff; /* Background for mobile dropdown */
+  }
+  
+  .navbar-nav .nav-item .nav-link {
+    margin: 5px 0; /* Spacing for dropdown links */
+  }
+  
+  .navbar-toggler-icon {
+    filter: invert(0.7); /* Makes the icon more visible */
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .navbar-nav {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 10px;
+    }
+  
+    .navbar-nav .nav-item .nav-link {
+      width: 100%; /* Full-width links in dropdown */
+      text-align: left;
+    }
+  }
+  
   
