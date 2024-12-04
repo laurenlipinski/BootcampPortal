@@ -9,6 +9,7 @@ import Attendance from "./pages/Attendance";
 import Announcements from "./pages/Announcements";
 import Resources from "./pages/Resources";
 import Homework from "./pages/Homework";
+import Discussion from ".pages/discussion"
 
 
 const App: React.FC = () => {
@@ -24,6 +25,8 @@ const App: React.FC = () => {
       <Route path="/announcements" element={<Announcements />} />
       <Route path="/resources" element={<Resources />} />
       <Route path="/homework" element={<Homework />} />
+      <Route path="/discussion" element={<Discussion />} />
+
       </Routes>
     </Router>
   );
