@@ -39,7 +39,7 @@ const Comment = ({ comment }) => {
 };
 
 const Discussion = () => {
-    <div> <NavBar
+     <NavBar
         brandName=""
         imageSrcPath={logo}
         navItems={[
