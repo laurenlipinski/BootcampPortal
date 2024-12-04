@@ -39,6 +39,18 @@ const Comment = ({ comment }) => {
 };
 
 const Discussion = () => {
+    <div> <NavBar
+        brandName=""
+        imageSrcPath={logo}
+        navItems={[
+          { name: "Home", path: "/home" },
+          { name: "Announcements", path: "/announcements" },
+          { name: "Attendance", path: "/attendance" },
+          { name: "Resources", path: "/resources" },
+          { name: "Homework", path: "/homework" },
+          
+        ]}
+      />
     const [comments, setComments] = useState([
         {
             id: 1,
