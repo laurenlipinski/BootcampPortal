@@ -39,19 +39,6 @@ const Comment = ({ comment }) => {
 };
 
 const Discussion = () => {
-     <NavBar
-        brandName=""
-        imageSrcPath={logo}
-        navItems={[
-          { name: "Home", path: "/home" },
-          { name: "Announcements", path: "/announcements" },
-          { name: "Attendance", path: "/attendance" },
-          { name: "Resources", path: "/resources" },
-          { name: "Homework", path: "/homework" },
-          { name: "Discussion", path: "/discussion"}
-          
-        ]}
-      />
     const [comments, setComments] = useState([
         {
             id: 1,
@@ -79,6 +66,19 @@ const Discussion = () => {
 
     return (
         <div className="discussion-board">
+            <NavBar
+                brandName=""
+                imageSrcPath={logo}
+                navItems={[
+                  { name: "Home", path: "/home" },
+                  { name: "Announcements", path: "/announcements" },
+                  { name: "Attendance", path: "/attendance" },
+                  { name: "Resources", path: "/resources" },
+                  { name: "Homework", path: "/homework" },
+                  { name: "Discussion", path: "/discussion"}
+                  
+                ]}
+          />
             <h1>App Dev Chat</h1>
             
             <div className="comments-container">
