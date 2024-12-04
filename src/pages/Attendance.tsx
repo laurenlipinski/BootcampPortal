@@ -78,6 +78,7 @@ const Attendance: React.FC = () => {
           { name: "Attendance", path: "/attendance" },
           { name: "Resources", path: "/resources" },
           { name: "Homework", path: "/homework" },
+          { name: "Discussion", path: "/discussion"},
           
         ]}
       />
