@@ -48,6 +48,7 @@ const Discussion = () => {
           { name: "Attendance", path: "/attendance" },
           { name: "Resources", path: "/resources" },
           { name: "Homework", path: "/homework" },
+          { name: "Discussion", path: "/discussion"}
           
         ]}
       />
