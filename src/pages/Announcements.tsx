@@ -28,7 +28,7 @@ const announcements: Announcement[] = [
     author: "Evelyn Jiang",
     timestamp: " 11/17 9:02 PM",
     message:
-      "Hi everyone, hope you all had a restful weekend. The Accenture event overlaps with our normal bootcamp time, so we have a couple adjustments.\n\nBootcamp will start promptly at 7:35pm at CSI 1121 (our usual room).\n\nIf you want to network with the Accenture speakers, prioritize that and then come to bootcamp after.\n\nThis will our last in-person lecture for the semester so please come if you can!\n\nWe\u2019re gonna go until 8:35pm and we understand that\u2019s a little late so you\u2019re free to leave around 8:15pm, but it would be great if you could stay the full time because we will be learning about SQL and database knowledge which will be important for your projects.\n\nSee you Tuesday!! :relieved:",
+      "Hi everyone, hope you all had a restful weekend. The Accenture event overlaps with our normal bootcamp time, so we have a couple adjustments.\n\nBootcamp will start promptly at 7:35pm at CSI 1121 (our usual room).\n\nIf you want to network with the Accenture speakers, prioritize that and then come to bootcamp after.\n\nThis will our last in-person lecture for the semester so please come if you can!\n\nWe\u2019re gonna go until 8:35pm and we understand that\u2019s a little late so you\u2019re free to leave around 8:15pm, but it would be great if you could stay the full time because we will be learning about SQL and database knowledge which will be important for your projects.\n\nSee you Tuesday!!",
    
   },
 ];
@@ -44,9 +44,7 @@ const Announcements: React.FC = () => {
           { name: "Announcements", path: "/announcements" },
           { name: "Attendance", path: "/attendance" },
           { name: "Resources", path: "/resources" },
-          { name: "Homework", path: "/homework" },
-          { name: "Discussion", path: "/discussion"},
-          
+          { name: "Homework", path: "/homework" },          
         ]}
         />
 

@@ -66,7 +66,7 @@ const NavBar: React.FC<NavBarProps> = ({ brandName, imageSrcPath, navItems }) =>
               </li>
             ))}
           </ul>
-          {/* Dark Mode Toggle Button */}
+          {/* Dark Mode Toggle Button 
           <button
             className="btn btn-dark ms-2"
             onClick={toggleDarkMode}
@@ -74,7 +74,7 @@ const NavBar: React.FC<NavBarProps> = ({ brandName, imageSrcPath, navItems }) =>
           >
             {darkMode ? "Light Mode" : "Dark Mode"}
           </button>
-
+*/}
           {/* Optional Search */}
           <form className="d-flex">
             <input

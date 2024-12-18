@@ -1,8 +1,8 @@
 .homework-container {
-    padding: 150px;
-    background-color: #f0f0f0;
-    color: #333;
-  }
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
   
   .homework-list {
     display: grid;
@@ -29,6 +29,15 @@
     font-size: 1.2em;
     margin-bottom: 5px;
     color: #333;
+    font-weight: bold; /* Make the title bold */
+  }
+
+
+  .homework-top-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #444;
+    margin-top: 1.5rem;
   }
   
   .homework-title.completed {

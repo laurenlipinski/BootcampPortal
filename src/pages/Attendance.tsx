@@ -77,9 +77,7 @@ const Attendance: React.FC = () => {
           { name: "Announcements", path: "/announcements" },
           { name: "Attendance", path: "/attendance" },
           { name: "Resources", path: "/resources" },
-          { name: "Homework", path: "/homework" },
-          { name: "Discussion", path: "/discussion"},
-          
+          { name: "Homework", path: "/homework" },          
         ]}
       />
         <div className="attendance-container">

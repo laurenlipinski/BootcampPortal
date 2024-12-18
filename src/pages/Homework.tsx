@@ -60,31 +60,33 @@ const Homework: React.FC = () => {
           { name: "Attendance", path: "/attendance" },
           { name: "Resources", path: "/resources" },
           { name: "Homework", path: "/homework" },
-          { name: "Discussion", path: "/discussion"},
         ]}
       />
+
+<h1 className="homework-top-title">Homework</h1>
       <div className="homework-container">
-        <div className="homework-list">
-          {homeworkList.map((homework, index) => (
-            <div className="homework-box" key={index}>
-              <input
-                type="checkbox"
-                id={`homework-${index}`}
-                checked={completed[index]}
-                onChange={() => handleCheckboxChange(index)}
-              />
-              <label htmlFor={`homework-${index}`}>
-                <h2 className={`homework-title ${completed[index] ? "completed" : ""}`}>
-                  {homework.title}
-                </h2>
-                <p className="homework-description">{homework.description}</p>
-                <a href={homework.formUrl} target="_blank" rel="noopener noreferrer" className="homework-link">
-                  Submit Here
-                </a>
-              </label>
-            </div>
-          ))}
-        </div>
+        
+          <div className="homework-list">
+            {homeworkList.map((homework, index) => (
+              <div className="homework-box" key={index}>
+                <input
+                  type="checkbox"
+                  id={`homework-${index}`}
+                  checked={completed[index]}
+                  onChange={() => handleCheckboxChange(index)}
+                />
+                <label htmlFor={`homework-${index}`}>
+                  <h2 className={`homework-title ${completed[index] ? "completed" : ""}`}>
+                    {homework.title}
+                  </h2>
+                  <p className="homework-description">{homework.description}</p>
+                  <a href={homework.formUrl} target="_blank" rel="noopener noreferrer" className="homework-link">
+                    Submit Here
+                  </a>
+                </label>
+              </div>
+            ))}
+          </div>
         <div className="status-wheel-container">
           <div className="status-wheel">
             <svg width="100" height="100" viewBox="0 0 100 100">

@@ -145,14 +145,13 @@ const Resources: React.FC = () => {
           { name: "Announcements", path: "/announcements" },
           { name: "Attendance", path: "/attendance" },
           { name: "Resources", path: "/resources" },
-          { name: "Homework", path: "/homework" },
-          { name: "Discussion", path: "/discussion"},
-          
+          { name: "Homework", path: "/homework" },          
         ]}
         />
 
+      
       <div className="resources-container">
-        <h1 className="resources-title">Resources</h1>
+      <h1 className="resources-title">Resources</h1> 
         {materials.map((material, index) => (
           <div className="week-materials" key={index}>
             <h2 className="week-title">{material.week}</h2>

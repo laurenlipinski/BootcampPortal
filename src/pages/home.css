@@ -1,14 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Consolas, "Courier New", Courier, monospace;
+    box-sizing: border-box;
+}
 
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Arial', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-
 
 nav {
     width: 100%;
@@ -20,7 +24,6 @@ nav {
     box-sizing: border-box;
 }
 
-
 nav a {
     color: white;
     text-decoration: none;
@@ -29,34 +32,65 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #575757;
+    background-color: #007bff;
     border-radius: 5px;
 }
-
 
 .home-container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     width: 100%;
-    padding: 20px;
+    padding: 0 20px;
     box-sizing: border-box;
+    margin-top: 0;
 }
-
 
 .home-title {
-    text-align: center;
-    margin-bottom: 20px;
+    font-family: Consolas, "Courier New", Courier, monospace;
     font-size: 2.5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+    animation: typing 3s steps(30) 1s forwards, blink-caret 0.75s step-end infinite;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
 }
 
+.home-title::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 1;
+    width: 2px;
+    height: 2.5rem;
+    background-color: #333;
+    animation: blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+    50% {
+        background-color: transparent;
+    }
+}
 
 .section-title {
     text-align: center;
     margin-bottom: 15px;
     font-size: 1.8rem;
 }
-
 
 .instructor-section {
     display: flex;
@@ -66,50 +100,60 @@ nav a:hover {
     text-align: center;
 }
 
-
 .instructor-image {
-    width: 300px;
+    width: 100px;
     border-radius: 10px;
     margin-bottom: 15px;
 }
-
 
 .instructor-info {
     margin: 5px 0;
 }
 
+.class-details-section,
+.contact-section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+}
 
 .class-details-section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
-    margin-bottom: 40px;
 }
-
-
-.class-details {
-    margin: 10px 0;
-}
-
 
 .contact-section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
 }
 
+.class-details,
+.contact-link {
+    font-size: 1.1rem;
+    color: #555;
+}
 
 .contact-link {
+    font-size: 1.2rem;
     margin-top: 10px;
     color: #007bff;
     text-decoration: none;
-    font-size: 1.1rem;
 }
 
-.contact-link:hover {
-    text-decoration: underline;
+/* Correctly adding the underline on hover only */
+.class-details-link {
+    text-decoration: none; /* Ensure no underline by default */
+}
+
+.class-details-link:hover {
+    text-decoration: underline; /* Underline when hovered */
 }
 
 .footer {
